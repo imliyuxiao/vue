@@ -1,17 +1,14 @@
 # vue
  For testing out GitHub Desktop
-<template>
+
   <div>
    <Input v-model="formVideo.phone" type="textarea" class="textInput" 
   placeholder="多个手机号码用逗号（英文）隔开" @keyup.native="inputChange($event)"></Input>
     <div class="send_tips">
-      共计<span style="padding:0 3px;">{{ formVideo.userCount }}</span>个有效号码，已过滤重复号
-
-码
+      共计<span style="padding:0 3px;">{{ formVideo.userCount }}</span>个有效号码，已过滤重复号码
     </div>
     <span>{{formVideo.textTips}}</span>
   </div>
-</template>
 <script>
   export default {
     data () {
